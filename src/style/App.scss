@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import "variables";
+@import "balls";
+@import "header";
+@import "main";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $color;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #1E1E1E;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 150px;
+  @media screen and (max-width: 1280px) {
+    margin: 0 50px;
+  }
+  @media screen and (max-width: 1060px) {
+    margin: 0 25px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
+}
+
+li {
+  list-style-type: none;
+}

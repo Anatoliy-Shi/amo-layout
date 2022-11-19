@@ -1,0 +1,118 @@
+@import "variables";
+
+.header {
+  padding-top: 57px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    padding-top: 0;
+    height: 55px;
+    background: #0E1014;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.navigation {
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.logo {
+  width: 165px;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    display: none;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__logo {
+    width: 35.05px;
+    height: 24px;
+    margin-right: 8.12px;
+  }
+
+  &__name {
+    width: 95.87px;
+    height: 14.14px;
+  }
+
+  &__description {
+    font-family: $font-montserrat;
+    width: 140px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+
+.list {
+  display: flex;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    overflow: auto;
+    padding: 15px 16px;
+  }
+
+  &__items {
+    font-family: $font-inter;
+    margin-right: 30px;
+    z-index: 1;
+    cursor: pointer;
+    padding-bottom: 2px;
+    &:hover {
+      border-bottom: 2px solid $color;
+    }
+    @media screen and (max-width: 460px) and (min-width: 320px) {
+      margin-right: 20px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.number {
+  font-family: $font-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  margin-right: 48.67px;
+}
+
+.telegram {
+  margin-right: 33.65px;
+}
+
+.phone {
+  margin-right: 34px;
+}
+
+.contacts {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.size:hover {
+  cursor: pointer;
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+}

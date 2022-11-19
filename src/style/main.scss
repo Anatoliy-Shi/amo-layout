@@ -1,0 +1,341 @@
+@import "variables";
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 94px;
+  @media screen and (max-width: 768px) and (min-width: 561px) {
+    margin: 40px 15px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (max-width: 560px) and (min-width: 320px) {
+    height: 445px;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+.title {
+  font-family: $font-inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  z-index: 1;
+  width: 362px;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &__color {
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+}
+
+.benefit {
+  font-family: $font-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 30px;
+  width: 275px;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    margin: 15px 0 45px;
+  }
+}
+
+.freeConsultation {
+  font-family: $font-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  width: 291px;
+  margin-bottom: 40px;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    text-align: start;
+  }
+}
+
+.free {
+  font-family: $font-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background: linear-gradient(54deg, #fc9145 15%, #e63535 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.consultation {
+  font-family: $font-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background: linear-gradient(92deg, #fcb845 27.14%, #e8650c 121.36%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.bonus {
+  width: 135px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    margin-bottom: 20px;
+    width: auto;
+    margin-right: 114px;
+  }
+}
+
+.description {
+  font-family: $font-montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    display: none;
+  }
+}
+.left {
+  @media screen and (max-width: 768px) and (min-width: 561px) {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    margin-bottom: 45px;
+    margin-left: 15px;
+    width: 560px;
+  }
+  @media screen and (max-width: 560px) and (min-width: 320px) {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media screen and (max-width: 768px) and (min-width: 561px) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    width: 560px;
+    margin-left: 15px;
+    flex-wrap: nowrap;
+  }
+  @media screen and (max-width: 560px) and (min-width: 320px) {
+    flex-wrap: wrap;
+    margin-left: 15px;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 30px;
+    @media screen and (max-width: 768px) and (min-width: 320px) {
+      gap: 0;
+    }
+  }
+}
+
+.widget {
+  @media screen and (max-width: 768px) {
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background: linear-gradient(90deg, rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+    width: 10px;
+    height: 1px;
+    position: relative;
+  }
+  &::after {
+    position: inherit;
+    left: 14px;
+    bottom: -7px;
+    content: 'Виджеты';
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      content: 'Skype аудит';
+      width: 102px;
+    }
+  }
+}
+
+.dashboard {
+  @media screen and (max-width: 768px) {
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background: linear-gradient(90deg, rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+    width: 10px;
+    height: 1px;
+    position: relative;
+  }
+  &::after {
+    position: inherit;
+    left: 14px;
+    bottom: -7px;
+    content: 'Dashboard';
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px)  {
+      position: absolute;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      content: '30 виджетов';
+      width: 110px;
+    }
+  }
+}
+
+.skype {
+  @media screen and (max-width: 768px) {
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background: linear-gradient(90deg, rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+    width: 10px;
+    height: 1px;
+    position: relative;
+  }
+  &::after {
+    position: inherit;
+    left: 14px;
+    bottom: -7px;
+    content: 'Skype Аудит';
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      content: 'Dashboard';
+      width: 97px;
+    }
+  }
+}
+
+
+.days {
+  @media screen and (max-width: 768px) {
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    background: linear-gradient(90deg, rgba(252, 176, 69, 1), rgba(253, 29, 29, 1));
+    width: 10px;
+    height: 1px;
+    position: relative;
+  }
+  &::after {
+    position: inherit;
+    left: 14px;
+    bottom: -7px;
+    content: '35 дней';
+    font-family: $font-inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      content: 'Месяц аmoCRM';
+      width: 128px;
+    }
+  }
+}
+
+.btn-consultation {
+  width: 262px;
+  height: 61px;
+  background-color: #4077F3;
+  font-family: $font-inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border: none;
+  margin-left: auto;
+  margin-top: 61px;
+  &:hover {
+    cursor: pointer;
+    background-color: #3a3fb4;
+  }
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    display: none;
+  }
+}
