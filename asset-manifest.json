@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/amo-layout/static/css/main.ab024dbb.css",
+    "main.js": "/amo-layout/static/js/main.14f36c15.js",
+    "index.html": "/amo-layout/index.html",
+    "main.ab024dbb.css.map": "/amo-layout/static/css/main.ab024dbb.css.map",
+    "main.14f36c15.js.map": "/amo-layout/static/js/main.14f36c15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab024dbb.css",
+    "static/js/main.14f36c15.js"
+  ]
+}
