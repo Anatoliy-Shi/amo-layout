@@ -146,7 +146,12 @@ footer {
 
 .transfer {
   @media screen and (max-width: 560px) and (min-width: 320px) {
-    width: 110px;
+    width: 126px;
+  }
+  &:first-child {
+    @media screen and (max-width: 560px) and (min-width: 320px) {
+      width: 110px;
+    }
   }
 }
 
