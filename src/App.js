@@ -10,7 +10,6 @@ function App() {
         <div className="wrapper">
             <div className="container">
                 <header className="header">
-
                     <div className="logo">
                         <div className="logo__img">
                             <img className="logo__logo" src={logo} alt="logo"/>
@@ -26,7 +25,6 @@ function App() {
                             <li className="list__items">Ингерации</li>
                             <li className="list__items">Кейсы</li>
                             <li className="list__items">Сертификаты</li>
-
                         </ul>
                     </div>
                     <div className="contacts">
@@ -52,7 +50,7 @@ function App() {
                             Вместе с&nbsp;<span className='free'>бесплатной</span> <br/>
                             <span className='consultation'>консультацией</span>&nbsp;мы дарим:
                         </div>
-                        <div>
+                        <div className="box">
                             <div className="bonus">
                                 <p className="widget"></p>
                                 <p className="description">30 готовых решений</p>

@@ -160,16 +160,16 @@ main {
     flex-wrap: wrap;
     margin-left: 15px;
   }
+}
 
-  & > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 300px;
-    gap: 30px;
-    @media screen and (max-width: 768px) and (min-width: 320px) {
-      gap: 0;
-    }
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 30px;
+  @media screen and (max-width: 768px) and (min-width: 320px) {
+    gap: 0;
   }
 }
 
