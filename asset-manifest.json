@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/amo-layout/static/css/main.ab024dbb.css",
-    "main.js": "/amo-layout/static/js/main.14f36c15.js",
+    "main.css": "/amo-layout/static/css/main.ba79273c.css",
+    "main.js": "/amo-layout/static/js/main.eb57aeb2.js",
     "index.html": "/amo-layout/index.html",
-    "main.ab024dbb.css.map": "/amo-layout/static/css/main.ab024dbb.css.map",
-    "main.14f36c15.js.map": "/amo-layout/static/js/main.14f36c15.js.map"
+    "main.ba79273c.css.map": "/amo-layout/static/css/main.ba79273c.css.map",
+    "main.eb57aeb2.js.map": "/amo-layout/static/js/main.eb57aeb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab024dbb.css",
-    "static/js/main.14f36c15.js"
+    "static/css/main.ba79273c.css",
+    "static/js/main.eb57aeb2.js"
   ]
 }
